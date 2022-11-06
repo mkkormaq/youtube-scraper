@@ -19,9 +19,9 @@ export default function Magic(){
             
              {data.data ?
                 data.data.map((item,i)=>(
-                    <div key={i}>
+                    <div key={i} className="upload">
                         <ul>
-                            <li>Title -- {item.title}</li>
+                            <li>{item.title}</li>
                             <li>Views -- {item.views}</li>
                             <li>When -- {item.when}</li>
                         </ul>

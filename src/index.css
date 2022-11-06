@@ -1,7 +1,33 @@
-ul{
-  list-style: none;
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
 h1{
   text-align: center;
+  margin: 70px 0;
+  font-size: 3rem;
+}
+
+body{
+  background: rgb(112, 112, 195);
+  color: rgb(239, 239, 239);
+  padding: 0 5px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+li{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.upload{
+  background: rgb(88, 88, 147);
+  padding: 10px 10px;
+  margin-bottom: 10px;
 }
