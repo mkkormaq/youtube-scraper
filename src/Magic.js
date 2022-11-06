@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, Fragment} from "react";
 import axios from "axios";
 
 export default function Magic(){
@@ -16,9 +16,19 @@ export default function Magic(){
     return(
         <>
             <h1>Numot the Nummy</h1>
-            <ul>
-                <li>{data.data ? data.data[0].title:'loading...'}</li>
-            </ul>
+            
+             {data.data ?
+                data.data.map((item,i)=>(
+                    <div key={i}>
+                        <ul>
+                            <li>Title -- {item.title}</li>
+                            <li>Views -- {item.views}</li>
+                            <li>When -- {item.when}</li>
+                        </ul>
+                     </div>
+                )) :
+                'loading....'}
+            
         </>
     )
 

@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 // import styled from 'styled-components'
 
 // function randomColor(){
@@ -85,29 +85,29 @@ import React, {useState} from 'react';
 //   )
 // }
 
-const randomDiceRoll = ()=>{
-  return Math.ceil(Math.random()* 6)
-}
+// const randomDiceRoll = ()=>{
+//   return Math.ceil(Math.random()* 6)
+// }
 
-function App() {
-  const [diceRolls, setDiceRolls] = useState([1])
-  return(
-    <div>
-      <button
-        onClick={()=>{
-          setDiceRolls([...diceRolls, randomDiceRoll()])
-        }}
-      >
-        Roll Dice 
-      </button>
-      <ul>
-        {diceRolls.map((diceRoll,index)=> (
-          <li key={index}>{diceRoll}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+// function App() {
+//   const [diceRolls, setDiceRolls] = useState([1])
+//   return(
+//     <div>
+//       <button
+//         onClick={()=>{
+//           setDiceRolls([...diceRolls, randomDiceRoll()])
+//         }}
+//       >
+//         Roll Dice 
+//       </button>
+//       <ul>
+//         {diceRolls.map((diceRoll,index)=> (
+//           <li key={index}>{diceRoll}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
 
 // const styles = {
 //   card: {
@@ -132,4 +132,4 @@ function App() {
 //     opacity: '0.5',
 //   },
 // }
-export default App;
+// export default App;
