@@ -11,8 +11,8 @@ root.render(
     <header>
       <div id="mySidepanel" className="sidepanel">
         <a href="#" className="closebtn" onClick={()=>closeNav()}>&times;</a>
-        <a href="https://sethmerck.netlify.app/">Seth Merck Porfolio</a>
-        <a href="https://mkkormaq.netlify.app/">Josh McCormack Portfolio</a>
+        <a href="https://sethmerck.netlify.app/" target='_blank' rel="noreferrer">Seth Merck Porfolio</a>
+        <a href="https://mkkormaq.netlify.app/" target='_blank' rel="noreferrer">Josh McCormack Portfolio</a>
       </div>
       <div className='hamburger'>
         <a id="menu" href='#' className='openbtn' onClick={()=>openNav()}>&#9776;</a>
@@ -20,13 +20,13 @@ root.render(
       <div className='header-logo'>
         <img src="logo192.png" alt="react logo" />
         <h2><a href="#banner">ScrapeTube</a></h2>
-        <img src="logo_py.png" alt="react logo" />
+        <img src="logo_py.png" alt="python logo" />
       </div>
       <div className='authors'>
         <span>CODERS:</span>
         <ul>
-          <li><a href='https://github.com/Merckus'>merckus</a></li>
-          <li><a href='https://github.com/mkkormaq'>mkkormaq</a></li>
+          <li><a href='https://github.com/Merckus' target='_blank' rel="noreferrer">merckus</a></li>
+          <li><a href='https://github.com/mkkormaq' target='_blank' rel="noreferrer">mkkormaq</a></li>
         </ul>
       </div>
     </header>
@@ -37,9 +37,9 @@ root.render(
       <Magic />
     </main>
     <footer>
-      <span>Banner image by <a href='https://www.deviantart.com/xenphire'>Xenphire</a></span>
+      <span>Banner image by <a href='https://www.deviantart.com/xenphire' target='_blank' rel="noreferrer">Xenphire</a></span>
       <span>All original artworks are copyright of Wizards of the Coast</span>
-      <span>Site designed by <a href='https://mkkormaq.netlify.app/'>Josh McCormack</a></span>
+      <span>Site designed by <a href='https://mkkormaq.netlify.app/' target='_blank' rel="noreferrer">Josh McCormack</a></span>
     </footer>
   </React.StrictMode>
 );
