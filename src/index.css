@@ -93,11 +93,12 @@ img{
 
 .upload{
   background: rgb(88, 88, 147);
-  padding: 10px 10px;
-  margin: 1rem;
+  padding: 30px 10px;
   border-radius: 5px;
+  margin: 0 10px 10px 10px;
 }
-.upload:hover{
+
+.upload:hover, button:hover{
   outline: 2px rgb(246, 136, 156) solid;
 }
 .upload ul{
@@ -108,4 +109,40 @@ img{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+button{
+  font-size: 1rem;
+  margin: 0 10px;
+  height: 50px;
+  width: 120px;
+  background: rgb(239, 239, 239);
+  color: rgb(88, 88, 147);
+  border: rgb(88, 88, 147) solid 3px;
+  border-radius: 5px;
+}
+button:active{
+  background: rgb(246, 136, 156);
+}
+.previous{
+  background: transparent;
+  color: rgb(239, 239, 239);
+  border: solid rgb(239, 239, 239) 3px;
+}
+iframe{
+  width:560px;
+  height: 315px;
+  border-radius: 5px;
+}
+@media(max-width: 650px){
+  iframe{
+    width: 300px;
+    height: calc((315/560) * 300px);
+  }
 }
