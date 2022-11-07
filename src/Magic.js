@@ -15,9 +15,7 @@ export default function Magic(){
     
     },[])
     return(
-        <>
-            <h1>Numot the Nummy</h1>
-            
+        <>  
             {data.data ?
                 data.data.values.map((item,i)=>{
                     if (i>0){
@@ -25,8 +23,8 @@ export default function Magic(){
                             <div key={i} className="upload">
                                 <ul>
                                     <li>{item[0]}</li>
-                                    <li>Views -- {item[1]}</li>
-                                    <li>When -- {item[2]}</li>
+                                    <li>{item[1]}</li>
+                                    <li>{item[2]}</li>
                                 </ul>
                             </div>
                         )
